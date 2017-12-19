@@ -1,0 +1,39 @@
+{
+  "name": "md-doc-gen",
+  "version": "0.0.1",
+  "description": "Simple package for code documentation in markdown and outputting it to html.",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "build": "node ./src/index.js make ./doc/markdown -d ./doc/public -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r4den/md-doc-gen.git"
+  },
+  "keywords": [
+    "markdown",
+    "documentation",
+    "javascript",
+    "generator",
+    "parser"
+  ],
+  "author": "r4den",
+  "license": "MIT",
+  "bin": {
+    "md-doc-gen": "./src/index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/r4den/md-doc-gen/issues"
+  },
+  "homepage": "https://github.com/r4den/md-doc-gen#readme",
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "commander": "^2.12.2",
+    "highlight.js": "^9.12.0",
+    "rimraf": "^2.6.2",
+    "showdown": "^1.8.5"
+  }
+}
